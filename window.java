@@ -71,7 +71,7 @@ public class window  implements ActionListener{
 	     
 	     button2 = new JPanel();
 		 button2.setVisible(true);
-	     button2.setBounds(335, 500, 50, 50);
+	     button2.setBounds(110, 470, 50, 50);
 	     button2.setBackground(null);
 	     con.add(button2 );
 	     b2= new JButton("♪");
