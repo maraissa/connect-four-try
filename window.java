@@ -46,7 +46,7 @@ public class window  implements ActionListener {
 		frame.setLocationRelativeTo(null);
 		con = frame.getContentPane();
 		 button = new JPanel();
-	     button.setBounds(300, 300, 100, 50);
+	     button.setBounds(350, 300, 100, 50);
 	     button.setBackground(null);
 	     con.add(button );
 	     start = new JButton("START");
@@ -84,55 +84,8 @@ public class window  implements ActionListener {
 	     b2.setFont(startFont);
 		
 	}
-	public void createScreen() {
-		
-		button.setVisible(false);
-		frame.setContentPane(new JLabel(new ImageIcon("C:\\Users\\myrai\\OneDrive\\Bureau\\cours\\projet\\page2.jpg")));
-		L2=new JLabel();
-		frame.add(L2);
-		con = frame.getContentPane();
-		 button1 = new JPanel();
-		 button1.setVisible(true);
-	     button1.setBounds(300, 150, 100, 50);
-	     button1.setBackground(null);
-	     con.add(button1 );
-	     b1= new JButton("2 Players");
-	     b1.setBackground(Color.white);
-	     b1.setForeground(Color.black);
-	     button1.add(b1);
-	     b1.addActionListener(choice);
-		 b1.setActionCommand("c1");
-	     b1.setFont(startFont);
-	     
-	     button2 = new JPanel();
-		 button2.setVisible(true);
-	     button2.setBounds(340, 300, 50, 50);
-	     button2.setBackground(null);
-	     con.add(button2 );
-	     b2= new JButton("♪");
-	     b2.setBackground(Color.white);
-	     b2.setForeground(Color.black);
-	     button2.add(b2);
-	     b2.addActionListener(choice);
-		 b2.setActionCommand("c2");
-	     b2.setFont(startFont);
-	     
-	     
-	     button3 = new JPanel();
-		 button3.setVisible(true);
-	     button3.setBounds(300, 420,120, 50);
-	     button3.setBackground(null);
-	     con.add(button3 );
-	     b3= new JButton("Quit");
-	     b3.setBackground(Color.white);
-	     b3.setForeground(Color.black);
-	     button3.add(b3);
-	     b3.addActionListener(choice);
-		 b3.setActionCommand("c3");
-	     b3.setFont(startFont);
-		
 	
-	}
+	
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
