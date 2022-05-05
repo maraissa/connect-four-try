@@ -1,7 +1,6 @@
-package ggg;
+package test;
 
 import java.awt.BorderLayout;
-
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Font;
@@ -15,17 +14,17 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JTextArea;
 
+import ggg.GameLoop;
+import ggg.window.choice;
 
-
-public class window  implements ActionListener {
-	
+public class window  implements ActionListener{
 	JFrame frame ;
 	JLabel L1,L2;
 	JPanel button,titree,button1 ,button2,button3 ; 
 	JButton start,b1,b2,b3;
 	Container con ;
 	JTextArea titre ;
-	Font titlef = new Font("Times New Roman",Font.PLAIN ,  50);
+	Font titlef = new Font("Times New Roman",Font.PLAIN ,  25);
 	Font startFont = new Font("No Continue", Font.PLAIN , 25);
 	choice choice = new choice();
 	
@@ -46,10 +45,10 @@ public class window  implements ActionListener {
 		frame.setLocationRelativeTo(null);
 		con = frame.getContentPane();
 		 button = new JPanel();
-	     button.setBounds(350, 300, 100, 50);
+	     button.setBounds(300, 300, 120, 50);
 	     button.setBackground(null);
 	     con.add(button );
-	     start = new JButton("START");
+	     start = new JButton("PLAY");
 	     start.setBackground(Color.white);
 	     start.setForeground(Color.black);
 	     button.add(start);
@@ -59,10 +58,10 @@ public class window  implements ActionListener {
 	     
 	     button3 = new JPanel();
 		 button3.setVisible(true);
-	     button3.setBounds(300, 390,100, 50);
+	     button3.setBounds(300, 390,120, 50);
 	     button3.setBackground(null);
 	     con.add(button3 );
-	     b3= new JButton("♪");
+	     b3= new JButton("QUIT");
 	     b3.setBackground(Color.white);
 	     b3.setForeground(Color.black);
 	     button3.add(b3);
@@ -72,10 +71,10 @@ public class window  implements ActionListener {
 	     
 	     button2 = new JPanel();
 		 button2.setVisible(true);
-	     button2.setBounds(300, 480, 100, 50);
+	     button2.setBounds(335, 500, 50, 50);
 	     button2.setBackground(null);
 	     con.add(button2 );
-	     b2= new JButton("Quit");
+	     b2= new JButton("♪");
 	     b2.setBackground(Color.white);
 	     b2.setForeground(Color.black);
 	     button2.add(b2);
@@ -118,4 +117,4 @@ public class window  implements ActionListener {
 		
 	}
 
-		}
+}
